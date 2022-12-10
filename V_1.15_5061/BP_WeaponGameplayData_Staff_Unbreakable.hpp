@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_WeaponGameplayData_Staff_Unbreakable_HPP
+#define UE4SS_SDK_BP_WeaponGameplayData_Staff_Unbreakable_HPP
+
+class UBP_WeaponGameplayData_Staff_Unbreakable_C : public UBP_WeaponGameplayData_Staff_C
+{
+};
+
+#endif

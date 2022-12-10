@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_DynamicAccessory_Grunt_M_ReversedCap_HPP
+#define UE4SS_SDK_BP_DynamicAccessory_Grunt_M_ReversedCap_HPP
+
+class ABP_DynamicAccessory_Grunt_M_ReversedCap_C : public ABP_DynamicAccessory_Master_C
+{
+};
+
+#endif

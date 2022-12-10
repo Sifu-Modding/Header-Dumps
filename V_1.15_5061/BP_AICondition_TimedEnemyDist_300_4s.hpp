@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_AICondition_TimedEnemyDist_300_4s_HPP
+#define UE4SS_SDK_BP_AICondition_TimedEnemyDist_300_4s_HPP
+
+class UBP_AICondition_TimedEnemyDist_300_4s_C : public UComboAIConditionTimedTargetDistance
+{
+};
+
+#endif

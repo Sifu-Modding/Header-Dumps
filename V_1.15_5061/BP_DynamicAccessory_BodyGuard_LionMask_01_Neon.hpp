@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_DynamicAccessory_BodyGuard_LionMask_01_Neon_HPP
+#define UE4SS_SDK_BP_DynamicAccessory_BodyGuard_LionMask_01_Neon_HPP
+
+class ABP_DynamicAccessory_BodyGuard_LionMask_01_Neon_C : public ABP_DynamicAccessory_Master_C
+{
+};
+
+#endif

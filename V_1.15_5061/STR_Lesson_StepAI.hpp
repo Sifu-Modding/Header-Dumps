@@ -1,0 +1,13 @@
+#ifndef UE4SS_SDK_STR_Lesson_StepAI_HPP
+#define UE4SS_SDK_STR_Lesson_StepAI_HPP
+
+struct FSTR_Lesson_StepAI
+{
+    FString PhaseName_16_B8B55E754F2EC07928F82CA0205B4B87;
+    class UAIPhaseScenario* Scenario_17_7EEE8C8B4E857C72735C32947798E302;
+    bool ShouldAttack_19_3B667D6541D98AE656B87AB25FB3EA75;
+    UClass* OverrideSpawningClass_25_F894696C40DE149E31D0509B8D936F48;
+
+};
+
+#endif

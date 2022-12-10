@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_Servant_Pacifist_NoAttack_NoXP_OneShot_DB_HPP
+#define UE4SS_SDK_BP_Servant_Pacifist_NoAttack_NoXP_OneShot_DB_HPP
+
+class UBP_Servant_Pacifist_NoAttack_NoXP_OneShot_DB_C : public UBP_Servant_ArchetypeDB_C
+{
+};
+
+#endif

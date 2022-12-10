@@ -1,0 +1,15 @@
+#ifndef UE4SS_SDK_UI_ComboInput_HPP
+#define UE4SS_SDK_UI_ComboInput_HPP
+
+struct FUI_ComboInput
+{
+    EControllerIconAxisTypes Movement_13_19C670254283E5A375BF499F1044D353;
+    InputAction Action_8_1F74412947D4E4373E7B588DF7D08D22;
+    EControllerIconStyles IconStyle_11_A91981F7447C2CBAE40F3EA93F286107;
+    bool AdditionPictoAfterInput_16_DFF77C4141420D3F889089B7FFBDBB80;
+    bool ArrowPictoAfterInput_18_5E566A2241AEE6BA9AC00486261A70DE;
+    bool NeedHold_20_E43A720E45DF5530AF9A2598B94C72A8;
+
+};
+
+#endif

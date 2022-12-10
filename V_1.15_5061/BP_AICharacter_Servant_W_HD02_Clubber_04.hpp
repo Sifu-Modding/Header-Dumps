@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_AICharacter_Servant_W_HD02_Clubber_04_HPP
+#define UE4SS_SDK_BP_AICharacter_Servant_W_HD02_Clubber_04_HPP
+
+class ABP_AICharacter_Servant_W_HD02_Clubber_04_C : public ABP_Servant_Base_W_C
+{
+};
+
+#endif

@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_AICondition_IsAttackInputAvailable_HPP
+#define UE4SS_SDK_BP_AICondition_IsAttackInputAvailable_HPP
+
+class UBP_AICondition_IsAttackInputAvailable_C : public UComboAIConditionIsInputActionAvailable
+{
+};
+
+#endif

@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_RootForPelvisComputationOrderService_HPP
+#define UE4SS_SDK_RootForPelvisComputationOrderService_HPP
+
+class URootForPelvisComputationOrderService_C : public UPelvisDirectionComputationParamsOrderService
+{
+};
+
+#endif

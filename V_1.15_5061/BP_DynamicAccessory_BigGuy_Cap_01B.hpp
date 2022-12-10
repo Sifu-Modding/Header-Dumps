@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_DynamicAccessory_BigGuy_Cap_01B_HPP
+#define UE4SS_SDK_BP_DynamicAccessory_BigGuy_Cap_01B_HPP
+
+class ABP_DynamicAccessory_BigGuy_Cap_01B_C : public ABP_DynamicAccessory_Master_C
+{
+};
+
+#endif

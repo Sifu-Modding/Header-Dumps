@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_FlashKick_ArchetypeDB_DanceFloor_AllTraversalAllowed_Miniboss_HPP
+#define UE4SS_SDK_BP_FlashKick_ArchetypeDB_DanceFloor_AllTraversalAllowed_Miniboss_HPP
+
+class UBP_FlashKick_ArchetypeDB_DanceFloor_AllTraversalAllowed_Miniboss_C : public UBP_FlashKick_ArchetypeDB_H2_MiniBoss_C
+{
+};
+
+#endif

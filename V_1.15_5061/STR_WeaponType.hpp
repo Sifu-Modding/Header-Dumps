@@ -1,0 +1,12 @@
+#ifndef UE4SS_SDK_STR_WeaponType_HPP
+#define UE4SS_SDK_STR_WeaponType_HPP
+
+struct FSTR_WeaponType
+{
+    bool Bat_3_F1A424FB4521C2D9D69080B7FA43ABCF;
+    bool Blade_4_3FFC3A7C4BB567917B4E6E863540D68A;
+    bool Staff_5_88D79DC84ABC0EA3DB420AAD5F698FCE;
+
+};
+
+#endif

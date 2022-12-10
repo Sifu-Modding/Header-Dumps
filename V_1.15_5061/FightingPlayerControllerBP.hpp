@@ -1,0 +1,93 @@
+#ifndef UE4SS_SDK_FightingPlayerControllerBP_HPP
+#define UE4SS_SDK_FightingPlayerControllerBP_HPP
+
+class AFightingPlayerControllerBP_C : public AFightingPlayerController
+{
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPostProcessComponent* PostProcess;
+    class UBP_HUD_C* PlayerHud;
+    class ABP_FightingPlayer_C* BP_FightingPlayer;
+    class UBP_Menu_Debug_C* DebugMenu;
+    FFightingPlayerControllerBP_CFightingPlayerRespawn FightingPlayerRespawn;
+    void FightingPlayerRespawn();
+    class UBP_HUD_Tuto_C* PlayerHUDTuto;
+    FFightingPlayerControllerBP_CPawnInitialized PawnInitialized;
+    void PawnInitialized();
+    FInteractionTextStruct InteractionTextStruct;
+    class UBP_HUD_AutoSave_C* AutoSaveWidget;
+    class UInteractionObjectComponent* InteractionObjectComponent;
+    class UWidget* PermanentHUD;
+    class UGenericErrorPopupWidget* PopupWidget;
+    FText InteractionLockedText;
+    bool InteractionUseLockedText;
+    FFightingPlayerControllerBP_CRestartAsked RestartAsked;
+    void RestartAsked();
+    class ABP_PostCardScreenActor_C* EndPostCardEffet;
+    FFightingPlayerControllerBP_CSkillTreeAssigned SkillTreeAssigned;
+    void SkillTreeAssigned();
+    class UNEW_BP_HUD_Tutorial_C* NewHUDTutorial;
+    FFightingPlayerControllerBP_CSkipToNextTutorialPhase SkipToNextTutorialPhase;
+    void SkipToNextTutorialPhase();
+    bool DebugHideDeathMenu;
+    TArray<FMenuRequestStructure> InGameMenuRequests;
+    bool HideFocus;
+    bool HideScoring;
+    class UBP_HUD_TrainingRoom_C* HUDTraining;
+    class UBP_HUD_ReplayRecording_C* ReplayRecordingWidget;
+
+    void GetMenuRequests(bool bConsume, TArray<FMenuRequestStructure>& OutList);
+    void ForceHideScoring(bool Hide);
+    void ForceHideFocus(bool Hide);
+    void GetInteractionLockedText(FText& Text);
+    void GetUseLockedText(bool& use);
+    void GetInteractionText(FInteractionTextStruct& Text);
+    void TryToDisableScoring();
+    float BPE_GetMaxAchievementProgress(FString _achievementId);
+    void BPE_GetActivitiesState(TArray<FString>& _activitiesState, TArray<FString>& _tasksToStart, TArray<FString>& _tasksToEnd, TArray<FString>& _subTasks);
+    void DestroyTrainingRoomWidget();
+    void CreateTrainingRoomWidget(class UBP_HUD_TrainingRoom_C*& HUDTraining);
+    void ForceHideHealthChanged();
+    void DestroyTutorialWidget();
+    void CreateTutorialWidget(class UNEW_BP_HUD_Tutorial_C*& HUD);
+    void SpawnEndScreenEffect(FTransform Transform, class ABP_PostCardScreenActor_C*& PostCardOut);
+    class UGenericErrorPopupWidget* BPE_CreatePopupWidget();
+    class UGenericErrorPopupWidget* BPE_GetPopupWidget();
+    void ChangeInteractionText(FInteractionTextStruct NewInteractionText);
+    void CloseDebugMenu();
+    void DegubMenuGestion();
+    void InpActEvt_O_K2Node_InputKeyEvent_8(FKey Key);
+    void InpActEvt_Gamepad_RightThumbstick_K2Node_InputKeyEvent_7(FKey Key);
+    void InpActEvt_Home_K2Node_InputKeyEvent_6(FKey Key);
+    void InpActEvt_Add_K2Node_InputKeyEvent_5(FKey Key);
+    void InpActEvt_Subtract_K2Node_InputKeyEvent_4(FKey Key);
+    void InpActEvt_F7_K2Node_InputKeyEvent_3(FKey Key);
+    void InpActEvt_NumPadZero_K2Node_InputKeyEvent_2(FKey Key);
+    void InpActEvt_A_AccentGrave_K2Node_InputKeyEvent_1(FKey Key);
+    void InpActEvt_Zero_K2Node_InputKeyEvent_0(FKey Key);
+    void BPE_OnSetInteractiveObjectComponent(class UInteractionObjectComponent* _newInteractionObjectComponent);
+    void CreateTuto();
+    void DestroyTuto();
+    void BPE_MenuEvent();
+    void BPE_PawnInitialized();
+    void BPE_LeaveGame();
+    void BPE_ToggleDebugMenu();
+    void BPE_GameInitialized(bool bHideLoadingScreen);
+    void OnTextChanged_Event_0();
+    void Fade Sound();
+    void BPE_RestartAsked();
+    void UpdateInteractionText();
+    void UpdateInteractionButtonVisibility();
+    void ReceiveBeginPlay();
+    void NotifySkillTreeAssigned();
+    void SetMenuRequests(const TArray<FMenuRequestStructure>& InRequestList, const bool bOpenMenu);
+    void OnOptionChanged_Event(EGameOptionTypes eGameOptionType);
+    void ReceiveEndPlay(TEnumAsByte<EEndPlayReason::Type> EndPlayReason);
+    void ExecuteUbergraph_FightingPlayerControllerBP(int32 EntryPoint);
+    void SkipToNextTutorialPhase__DelegateSignature();
+    void SkillTreeAssigned__DelegateSignature();
+    void RestartAsked__DelegateSignature();
+    void PawnInitialized__DelegateSignature();
+    void FightingPlayerRespawn__DelegateSignature();
+};
+
+#endif

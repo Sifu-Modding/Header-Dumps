@@ -1,0 +1,96 @@
+#ifndef UE4SS_SDK_DetectiveVisibleActor_HPP
+#define UE4SS_SDK_DetectiveVisibleActor_HPP
+
+class ADetectiveVisibleActor_C : public ASCStaticMeshPrimInstActor
+{
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBillboardComponent* Billboard;
+    class UUsable_OptionListenerComponent_C* Usable_OptionListenerComponent;
+    class USceneComponent* LookAtTarget;
+    class UInteractionObjectComponent* InteractionObject;
+    class UBoxComponent* InteractionBox;
+    FGameplayTag DetectiveTag;
+    FGameplayTagContainer AdditionalDetectiveTags;
+    FText OnCompletedText;
+    FName DialogSegmentOnCompleted;
+    bool bCanAlwaysBeUsed;
+    bool bHiddenAfterUse;
+    bool bHasBeenUsed;
+    bool bHasDoorBeenOpened;
+    bool bCanUseDoor;
+    bool bShowVisualFeedback;
+    FGameplayTagContainer RequiredDetectiveTagContainer;
+    FGameplayTag DetectiveTagOnFail;
+    FText MessageToShowOnFail;
+    class ABP_2WaysInterractiveLockableDoor_C* LinkedDoor;
+    bool bAutoOpenDoor;
+    class UHUDUserWidget* HUDInfoWidget;
+    class ULevelSequence* SequenceWay1;
+    class ULevelSequence* SequenceWay2;
+    class ULevelSequence* DefaultSequenceWay1;
+    class ULevelSequence* DefaultSequenceWay2;
+    bool bIsPickedUp;
+    class UAnimSequence* DefaultPickupAnim;
+    TEnumAsByte<VariableWeightLayers> DefaultPickUpVariableWeightLayer;
+    class UAnimSequence* LowPickupAnim;
+    TEnumAsByte<VariableWeightLayers> LowPickUpVariableWeightLayer;
+    FTransform DefaultTransform;
+    bool bDoorUseInteraction;
+    bool bLockDoorIfNoSequence;
+    FName DialogSegmentOnFail;
+    class UAkAudioEvent* FailedInteractionAkEvent;
+    class UAkAudioEvent* SuccessfulInteractionAkEvent;
+    class UAkAudioEvent* DoorUnlockedAkEvent;
+    FDetectiveVisibleActor_COnInteractionFailed OnInteractionFailed;
+    void OnInteractionFailed();
+    class UAnimSequence* DoorLockedAnimation;
+    class UBlendProfile* OldV0BlendProfile;
+    class UBlendProfile* OldV1BlendProfile;
+    class UBlendProfile* OldV2BlendProfile;
+    bool bMustRestoreBlendProfiles;
+    TEnumAsByte<VariableWeightLayers> eVWLayerToRestore;
+
+    bool CanInteract(class APawn* _Instigator, FText& _outReason);
+    void RestoreWeaponBlendProfiles(class AFightingCharacter* FightingChar);
+    void OnDoorUseInteraction(bool Way1);
+    void GetEffectiveTagContainerToUnlock(FGameplayTagContainer& OutTagContainer);
+    void Get Bone to Attach To(class AFightingCharacter* InCharacter, bool bMirrored, FName& Outbone);
+    void UpdateAnimBlendProfiles(class AFightingCharacter* InFightingChar, TEnumAsByte<VariableWeightLayers> VWLayer, class UBlendProfile* V0BlendProfile, class UBlendProfile* V1BlendProfile, class UBlendProfile* V2BlendProfile);
+    void GetPickupAnim(class AFightingCharacter* InFightingChar, class UAnimSequence*& OutAnimSequence, TEnumAsByte<VariableWeightLayers>& OutEnum);
+    void Can Play Sequence Auto Open(class ABP_2WaysInterractiveLockableDoor_C* InDoor, bool& bOutAutoOpenDoor);
+    void OnSuccessfulInteraction(class AActor* Investigator, bool bForceUpdate);
+    void DetachFromLinkedDoor();
+    void AttachToLinkedDoor();
+    void UpdateHasBeenUsed_Advanced(bool bInNewValue, bool bInCanUseDoor, bool bForced);
+    void ToggleInfoHUD(bool bShow, FText TextToShow);
+    void GetDoorAnimations(class ABP_2WaysInterractiveLockableDoor_C* InDoor, class UAnimationAsset*& OutOpenAsset, class UAnimationAsset*& OutCloseAsset);
+    void Can Play Gameplay Auto Open(class ABP_2WaysInterractiveLockableDoor_C* InDoor, bool& bOutAutoOpenDoor);
+    void UpdateVisualFeedback();
+    void UpdateState();
+    void UpdateHasBeenUsed(class UAbilitySystemComponent* InAbilityComponent, bool bForced);
+    void OnTriggered();
+    void UserConstructionScript();
+    void BndEvt__InteractionObject_K2Node_ComponentBoundEvent_0_UseObject__DelegateSignature(class APlayerController* PlayerController);
+    void ReceiveBeginPlay();
+    void OnAlertLevelChanged(EAlertLevel EAlertLevel);
+    void ReceiveEndPlay(TEnumAsByte<EEndPlayReason::Type> EndPlayReason);
+    void OnTagsChangedDelegate(class USCAbilitySystemComponent* _abilityComponent, const FGameplayTag& _tag, int32 _iCount);
+    void OnPawnInitializedEvent(class AFightingCharacter* _pawn);
+    void BndEvt__InteractionObject_K2Node_ComponentBoundEvent_1_FailedUseObject__DelegateSignature(class APlayerController* PlayerController, FText FailReason);
+    void BndEvt__InteractionObject_K2Node_ComponentBoundEvent_2_UseObject__DelegateSignature(class APlayerController* PlayerController);
+    void BndEvt__Usable_OptionListenerComponent_K2Node_ComponentBoundEvent_3_OnOptionChangedDynamicDelegate__DelegateSignature(EGameOptionTypes _eOptionType);
+    void OnOpenDoor(class APlayerController* PlayerController);
+    void ShowCompletedText(class AActor* InInvestigator);
+    void RemoveSequencesOverride();
+    void OnPickedUp(const FNetStructPickUpObject& _pickupObjectOrderStruct, class AFightingCharacter* _picker);
+    void OnOrderPickupEnd(const FNetStructPickUpObject& _pickupObjectOrderStruct, class AFightingCharacter* _picker);
+    void BndEvt__DetectiveVisibleActor_InteractionBox_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+    void BndEvt__DetectiveVisibleActor_InteractionBox_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+    void CE_OnUseInteractionFailed(class AController* Controller, FText FailReason);
+    void CE_FakeUseInteractionFailed();
+    void CE_BlockDoorOneFrame();
+    void ExecuteUbergraph_DetectiveVisibleActor(int32 EntryPoint);
+    void OnInteractionFailed__DelegateSignature();
+};
+
+#endif

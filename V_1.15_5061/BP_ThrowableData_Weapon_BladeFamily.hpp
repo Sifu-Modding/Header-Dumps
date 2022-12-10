@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_ThrowableData_Weapon_BladeFamily_HPP
+#define UE4SS_SDK_BP_ThrowableData_Weapon_BladeFamily_HPP
+
+class UBP_ThrowableData_Weapon_BladeFamily_C : public UBP_ThrowableData_WeaponMaster_C
+{
+};
+
+#endif

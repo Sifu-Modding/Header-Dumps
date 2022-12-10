@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_DynamicAccessory_servant_Sunglasses_02_HPP
+#define UE4SS_SDK_BP_DynamicAccessory_servant_Sunglasses_02_HPP
+
+class ABP_DynamicAccessory_servant_Sunglasses_02_C : public ABP_DynamicAccessory_Master_C
+{
+};
+
+#endif

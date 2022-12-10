@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_Hideout_2_Sound_Reverb_Zone1_2Entrance_HPP
+#define UE4SS_SDK_Hideout_2_Sound_Reverb_Zone1_2Entrance_HPP
+
+class AHideout_2_Sound_Reverb_Zone1_2Entrance_C : public AThePlainesLevel
+{
+};
+
+#endif
