@@ -1,0 +1,14 @@
+#ifndef UE4SS_SDK_STR_Scoring_MultiplierFloors_HPP
+#define UE4SS_SDK_STR_Scoring_MultiplierFloors_HPP
+
+struct FSTR_Scoring_MultiplierFloors
+{
+    float FloorScoreForNextFloor_9_9B013B894760E59D3A461DBB2A91755B;
+    float FloorScoreRatioWhenEnteringFromLower_22_F77927814CD9272D93BBB39D928E3972;
+    float FloorScoreRatioWhenEnteringFromUpper_23_2BE326824AA4DFABE784008B7AB32DDE;
+    FFloatRange DecrementRateRange_26_45A974EC48F657160E536B97F6C54022;
+    FFloatRange CooldownBeforeDecremenrtRange_29_24A1E6504EF46107CC658CA451107BDA;
+
+};
+
+#endif

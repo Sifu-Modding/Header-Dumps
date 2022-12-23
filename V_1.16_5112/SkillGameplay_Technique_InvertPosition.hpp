@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_SkillGameplay_Technique_InvertPosition_HPP
+#define UE4SS_SDK_SkillGameplay_Technique_InvertPosition_HPP
+
+class USkillGameplay_Technique_InvertPosition_C : public USkillGameplay_Technique_C
+{
+};
+
+#endif

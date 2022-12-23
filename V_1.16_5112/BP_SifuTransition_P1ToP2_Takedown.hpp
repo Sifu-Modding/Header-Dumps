@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_SifuTransition_P1ToP2_Takedown_HPP
+#define UE4SS_SDK_BP_SifuTransition_P1ToP2_Takedown_HPP
+
+class UBP_SifuTransition_P1ToP2_Takedown_C : public UBP_BossTransitionSyncAttackHit_C
+{
+};
+
+#endif

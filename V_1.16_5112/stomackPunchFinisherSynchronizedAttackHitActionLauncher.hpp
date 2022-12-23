@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_stomackPunchFinisherSynchronizedAttackHitActionLauncher_HPP
+#define UE4SS_SDK_stomackPunchFinisherSynchronizedAttackHitActionLauncher_HPP
+
+class UStomackPunchFinisherSynchronizedAttackHitActionLauncher_C : public UBP_SynchronizedAttacksHitAction_C
+{
+};
+
+#endif

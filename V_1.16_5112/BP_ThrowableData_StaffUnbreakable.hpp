@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_ThrowableData_StaffUnbreakable_HPP
+#define UE4SS_SDK_BP_ThrowableData_StaffUnbreakable_HPP
+
+class UBP_ThrowableData_StaffUnbreakable_C : public UBP_ThrowableData_Weapon_StaffFamily_C
+{
+};
+
+#endif
