@@ -1,0 +1,20 @@
+enum class AKE_PhysicalBreakable_Switch {
+    NewEnumerator0 = 0,
+    NewEnumerator1 = 1,
+    NewEnumerator13 = 2,
+    NewEnumerator14 = 3,
+    NewEnumerator17 = 4,
+    NewEnumerator18 = 5,
+    NewEnumerator21 = 6,
+    NewEnumerator31 = 7,
+    NewEnumerator32 = 8,
+    NewEnumerator33 = 9,
+    NewEnumerator34 = 10,
+    NewEnumerator35 = 11,
+    NewEnumerator36 = 12,
+    NewEnumerator37 = 13,
+    NewEnumerator38 = 14,
+    NewEnumerator39 = 15,
+    AKE_PhysicalBreakable_MAX = 16,
+};
+

@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_Fengjie_ArchetypeDB_Training_Phase2_LongRange_HPP
+#define UE4SS_SDK_BP_Fengjie_ArchetypeDB_Training_Phase2_LongRange_HPP
+
+class UBP_Fengjie_ArchetypeDB_Training_Phase2_LongRange_C : public UBP_Fengjie_Phase2_LongRange_ArchetypeDB_C
+{
+}; // Size: 0x6F9
+
+#endif

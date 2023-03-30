@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_AiAction_SpawnBamboo_Then_WallJump_Horizontal_HPP
+#define UE4SS_SDK_BP_AiAction_SpawnBamboo_Then_WallJump_Horizontal_HPP
+
+class UBP_AiAction_SpawnBamboo_Then_WallJump_Horizontal_C : public UBP_AiAction_SpawnBamboo_Then_WallJump_C
+{
+}; // Size: 0x188
+
+#endif
