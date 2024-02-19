@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_RagingBullLDCollisionOrderService_IgnoreTarget_HPP
+#define UE4SS_SDK_BP_RagingBullLDCollisionOrderService_IgnoreTarget_HPP
+
+class UBP_RagingBullLDCollisionOrderService_IgnoreTarget_C : public UBP_RagingBullLDCollisionOrderService_C
+{
+}; // Size: 0x900
+
+#endif

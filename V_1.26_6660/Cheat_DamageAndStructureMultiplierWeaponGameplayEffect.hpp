@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_Cheat_DamageAndStructureMultiplierWeaponGameplayEffect_HPP
+#define UE4SS_SDK_Cheat_DamageAndStructureMultiplierWeaponGameplayEffect_HPP
+
+class UCheat_DamageAndStructureMultiplierWeaponGameplayEffect_C : public UCheat_DamageMultiplierReceivedGameplayEffect_C
+{
+}; // Size: 0x7F8
+
+#endif

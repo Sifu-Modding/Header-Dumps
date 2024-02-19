@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_Cheat_threeQuarterDamageMultiplierReceivedGameplayEffect_HPP
+#define UE4SS_SDK_Cheat_threeQuarterDamageMultiplierReceivedGameplayEffect_HPP
+
+class UCheat_threeQuarterDamageMultiplierReceivedGameplayEffect_C : public UCheat_DamageMultiplierReceivedGameplayEffect_C
+{
+}; // Size: 0x7F8
+
+#endif
