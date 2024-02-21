@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_ShrineModifierCalculation_StructureGainOnAvoid_HPP
+#define UE4SS_SDK_BP_ShrineModifierCalculation_StructureGainOnAvoid_HPP
+
+class UBP_ShrineModifierCalculation_StructureGainOnAvoid_C : public UBP_ShrineModifierCalculation_C
+{
+}; // Size: 0x50
+
+#endif

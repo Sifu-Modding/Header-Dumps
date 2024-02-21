@@ -1,0 +1,8 @@
+enum class SimpleLimbs {
+    NewEnumerator0 = 0,
+    NewEnumerator1 = 1,
+    NewEnumerator2 = 2,
+    NewEnumerator3 = 3,
+    SimpleLimbs_MAX = 4,
+};
+
